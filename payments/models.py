@@ -45,13 +45,6 @@ class Payment(models.Model):
         help_text="Reason for approval or rejection."
     )
 
-    reviewed_by = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.SET_NULL,
-        null=True,
-        blank=True,
-        related_name="reviewed_payments"
-    )
 
     reviewed_at = models.DateTimeField(
         null=True,
