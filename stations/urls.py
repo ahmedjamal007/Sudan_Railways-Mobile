@@ -10,12 +10,12 @@ urlpatterns = [
         name="station-list",
     ),
     path(
-        "/create/",
+        "/create",
         StationCreateAPIView.as_view(),
         name="station-create",
     ),
     path(
-        "/<uuid:pk>/",
+        "/<uuid:pk>",
         StationDetailAPIView.as_view(),
         name="station-detail",
     ),
