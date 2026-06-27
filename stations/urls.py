@@ -1,10 +1,6 @@
 from django.urls import path
 
-from .views import (
-    ScheduleListAPIView,
-    ScheduleCreateAPIView,
-    ScheduleDetailAPIView,
-)
+from .views import StationListAPIView , StationCreateAPIView, StationDetailAPIView
 
 urlpatterns = [
     # Stations
